@@ -1,8 +1,14 @@
 import React from 'react'
+import Page1 from './pages/Page1'
+import Header from './components/Header'
 
 const App = () => {
   return (
-    <div className='font-[alag anzo] text-6xl'>App</div>
+    <>
+    <Header/> 
+    <Page1/>
+    <Page1/>
+    </>
   )
 }
 
