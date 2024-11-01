@@ -42,6 +42,7 @@ const Page2 = () => {
                 <h1 className='rotateText uppercase leading-[32vw] text-black font-[anzo4] text-[41vw]'>THAT</h1>
             </div>
             <div>
+                <canvas>    </canvas>
                 <h1 className='rotateText uppercase leading-[32vw] text-black font-[anzo4] text-[41vw]'>WORKS</h1>
             </div>
             <div className='flex items-center justify-center scale-75 mt-5'>
