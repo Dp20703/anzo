@@ -46,3 +46,15 @@ body {
   font-family: alag anzo;
   src: url(assets/madefor-text.var.original.woff2)
 }
+
+#page-in {
+  /* position: relative; */
+  perspective: 1000px;
+}
+
+#tiltdiv {
+  /* background-color: red; */
+  width: fit-content;
+  /* transform: rotateY(90deg); */
+  /* transform: rotateX(90deg); */
+}
