@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import Page1Bottom from '../components/Page1Bottom'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import TiltText from '../components/TiltText';
 
 const Page1 = () => {
     const tiltRef = useRef(null);
@@ -17,10 +18,13 @@ const Page1 = () => {
         // console.log(tiltRef.current.getBoundingClientRect().y)
         // tiltRef.current.style.transform = `rotateX(${yVal}deg) rotateY(${xVal}deg)`
     }
+
+    //use to tilt the text:
     useGSAP(() => {
         gsap.to(tiltRef.current, {
             transform: `rotateX(${yVal}deg) rotateY(${xVal}deg)`,
-            duration: 3,
+            duration: 5,
+            ease:'power4.out',
         })
     }, [xVal, yVal])
     return (
@@ -29,11 +33,7 @@ const Page1 = () => {
         }}>
             <div id='page-in' className=" p-20 h-full bg-cover rounded-[40px] shadow-xl shadow-gray-500 bg-[url(https://static.wixstatic.com/media/f1c650_678c0ceab5194893872c60fa3be4bcdc~mv2.jpg/v1/fill/w_1854,h_885,fp_0.69_0.64,q_85,usm_0.66_1.00_0.01,enc_auto/ANZO.jpg)]">
                 <img className='h-24' src="https://static.wixstatic.com/media/f1c650_35a00b1fe6ce403eb237970ec8d34f79~mv2.png/v1/fill/w_99,h_99,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Frame%2053.png" alt="" />
-                <div id='tiltdiv' ref={tiltRef} className='mt-40'>
-                    <h1 className='text-[4.2vw] font-[anzo5] leading-[4vw]'>I AM <span className='text-black font-[anzo1]'>DARK MODE</span>™</h1>
-                    <h1 className='text-[8.2vw] font-[anzo2] leading-[7vw]'>DESIGNER</h1>
-                    <h1 className='text-[4.2vw] font-[anzo5] leading-[4vw]'>TO HIRE</h1>
-                </div>
+               <TiltText tiltRef={tiltRef}/>
                 <Page1Bottom />
             </div>
         </div>
