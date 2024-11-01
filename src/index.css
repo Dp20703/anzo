@@ -58,3 +58,9 @@ body {
   /* transform: rotateY(90deg); */
   /* transform: rotateX(90deg); */
 }
+#section2{
+perspective:1000px;
+}
+.rotateText{
+  transform-origin: 100% 70%;
+}
