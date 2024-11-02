@@ -45,6 +45,7 @@ const Page2 = () => {
                 <canvas>    </canvas>
                 <h1 className='rotateText uppercase leading-[32vw] text-black font-[anzo4] text-[41vw]'>WORKS</h1>
             </div>
+            <canvas></canvas>
             <div className='flex items-center justify-center scale-75 mt-5'>
                 <svg preserveAspectRatio="xMidYMid meet" data-bbox="4 0 2028.339 83" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2037 91" height="91" width="2037" data-type="ugc" role="img" aria-label="Tesla, Figma, Wix Studio, Google+, BeHance monochrome Logo Design by Anzo Studio ">
                     <g>
