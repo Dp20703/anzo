@@ -6,11 +6,13 @@ import Page3 from './pages/Page3'
 import Page4 from './pages/Page4'
 import Page5 from './pages/Page5'
 import Page6 from './pages/Page6'
+import Banner from './components/Banner'
 
 const App = () => {
   return (
     <>
     <Header/> 
+    <Banner/>
     <Page1/>
     <Page2/>
     <Page3/>
