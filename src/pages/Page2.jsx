@@ -5,7 +5,7 @@ import React from 'react'
 
 const Page2 = () => {
     //Use to register the gsap scrollTrigger
-    gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger);
 
     //Use to rotate the Texts:
     useGSAP(() => {
