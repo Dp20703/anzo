@@ -1,6 +1,16 @@
 import React from 'react'
-
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 const Banner = () => {
+    //use to rotate the two round imgs:
+    useGSAP(() => {
+        gsap.to('#banner img', {
+            rotate: 360,
+            duration: 5,
+            repeat: -1,
+            ease: 'linear'
+        })
+    })
     return (
         <>
             <div id='banner' className='h-screen w-full fixed z-10  flex   flex-col justify-end items-end p-20 '>
