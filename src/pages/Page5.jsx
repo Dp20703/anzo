@@ -22,7 +22,7 @@ const Page5 = () => {
         })
     })
     return (
-        <div id='section2' className='bg-white p-5  '>
+        <div id='section2' className='bg-white p-5   '>
             <div className='h-full w-full rounded-[50px]  text-center'>
                 <h1 className='rotateText2 text-black text-[41vw] uppercase leading-[32vw] font-[anzo4]'>HELPING</h1>
             </div>
