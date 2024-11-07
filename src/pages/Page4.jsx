@@ -15,8 +15,8 @@ const Page4 = () => {
                         <h4 className='lowercase font-[anzo5] text-xl leading-snug'> websites that seamlessly bridge your goals with needs of your clients.</h4>
                     </div>
                 </div>
-                <div className="video rounded-xl h-[90vh] overflow-hidden mb-5 bg-red-500 ">
-                    <video autoPlay loop muted className='h-full w-full object-cover  ' src="/src/assets/planet-video.mp4" ></video>
+                <div className="video rounded-xl h-[90vh] overflow-hidden mb-5 b">
+                    <video autoPlay loop muted className='h-full w-full object-cover  ' src="/src/assets/planet-video.mp4"></video>
                 </div>
             </div>
         </div>
